@@ -190,6 +190,9 @@ The app was checked with:
 <img width="1918" height="928" alt="Screenshot 2026-04-29 172543" src="https://github.com/user-attachments/assets/c22ff2e2-1120-4e03-a156-aba9361b3697" />
 ```Error Handler```
 <img width="1919" height="106" alt="image" src="https://github.com/user-attachments/assets/af819914-144c-444f-a436-34aac9326f23" />
+```JSONPlanCard```
+<img width="1919" height="1029" alt="image" src="https://github.com/user-attachments/assets/97ba7d78-c9ce-4333-8789-5e337d9e024a" />
+
 ```Mobile responsive ```
 <img width="618" height="918" alt="image" src="https://github.com/user-attachments/assets/528fcf79-1bc3-44b6-8433-ae272d83cf7e" />
 
