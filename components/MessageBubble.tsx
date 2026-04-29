@@ -13,7 +13,11 @@ interface Props {
 
 function tryParseStudyPlan(content: string): StudyPlan | null {
   try {
-    const parsed = JSON.parse(content);
+    // Look for a JSON block that has both title and steps
+    const jsonMatch = content.match(/\{[\s\S]*\}/);
+    if (!jsonMatch) return null;
+
+    const parsed = JSON.parse(jsonMatch[0]);
     if (
       parsed &&
       typeof parsed === "object" &&

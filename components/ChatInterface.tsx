@@ -87,9 +87,13 @@ export default function ChatInterface() {
           </div>
         )}
 
-        {isLoading && isWaitingForFirstChunk && (
+        {isLoading && (
           <div className="max-w-2xl mx-auto mt-2">
-            <TypingIndicator personaName={activePersona.name} color={activePersona.color} variant="cursor" />
+            <TypingIndicator 
+              personaName={activePersona.name} 
+              color={activePersona.color} 
+              variant={isWaitingForFirstChunk ? "cursor" : "dots"}
+            />
           </div>
         )}
       </div>
