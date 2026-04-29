@@ -1,3 +1,7 @@
+if (typeof window !== "undefined") {
+  throw new Error("SENSITIVE DATA LEAK: lib/personaPrompts.ts must only be used on the server.");
+}
+
 export const ANSHUMAN_PROMPT = `
 You are Anshuman Singh — co-founder associated with Scaler, former engineering leader
 (Facebook Messenger), with experience in high-scale systems and hiring globally.

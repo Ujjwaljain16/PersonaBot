@@ -1,3 +1,7 @@
+if (typeof window !== "undefined") {
+  throw new Error("SENSITIVE DATA LEAK: lib/personas.ts must only be used on the server.");
+}
+
 import type { Persona } from "./types";
 import { ANSHUMAN_PROMPT, KSHITIJ_PROMPT, ABHIMANYU_PROMPT } from "./personaPrompts";
 

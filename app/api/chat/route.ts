@@ -3,8 +3,31 @@ import { NextRequest, NextResponse } from "next/server";
 import PERSONAS from "../../../lib/personas";
 import { detectJailbreakAttempt, wrapUserInput, sanitizeOutput, logJailbreakAttempt } from "../../../lib/jailbreakDefense";
 
+// Basic in-memory rate limiting (Note: resets on serverless restart)
+const RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
+const MAX_REQUESTS_PER_WINDOW = 20;
+const requestCounts = new Map<string, { count: number; resetTime: number }>();
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const userData = requestCounts.get(ip);
+
+  if (!userData || now > userData.resetTime) {
+    requestCounts.set(ip, { count: 1, resetTime: now + RATE_LIMIT_WINDOW });
+    return false;
+  }
+
+  userData.count++;
+  return userData.count > MAX_REQUESTS_PER_WINDOW;
+}
+
 export async function POST(req: NextRequest) {
   try {
+    const ip = req.headers.get("x-forwarded-for") || "anonymous";
+    if (isRateLimited(ip)) {
+      return NextResponse.json({ error: "Too many requests. Please wait a minute." }, { status: 429 });
+    }
+
     const body = await req.json();
     const { messages, personaId } = body as { messages: Array<{ role: string; content: string }>; personaId: string };
 
@@ -81,7 +104,7 @@ export async function POST(req: NextRequest) {
               // Validate persona consistency on complete response
               const { clean: isConsistent, response: sanitized } = sanitizeOutput(fullResponse, persona.name);
               if (!isConsistent) {
-                console.warn(`[SECURITY] Persona break detected in response, replacing with safe output`);
+                console.warn(`[SECURITY] Persona break detected in response for ${persona.name}, replacing with safe output`);
                 controller.enqueue(encoder.encode("\n\n" + sanitized));
               }
 
