@@ -77,7 +77,7 @@ export default function ChatInterface() {
         {messages.length === 0 ? (
           <div className="max-w-2xl mx-auto text-center py-12">
             <h2 className="text-lg font-semibold" style={{ color: activePersona.color }}>{activePersona.greeting}</h2>
-            <div className="mt-4"><SuggestionChips suggestions={activePersona.suggestions} personaColor={activePersona.color} onSelect={(s) => sendMessage(s)} /></div>
+            <div className="mt-4"><SuggestionChips suggestions={activePersona.suggestions} personaColor={activePersona.color} onSelectAction={(s) => sendMessage(s)} /></div>
           </div>
         ) : (
           <div className="max-w-2xl mx-auto">
