@@ -1,9 +1,55 @@
+# Dependencies
 node_modules
-.next
+/.pnp
+.pnp.js
+
+# Environment variables (NEVER commit real keys)
 .env
 .env.local
 .env.*.local
+.env.production.local
+
+# Build outputs
+/.next/
+/out/
 dist
+build
+.cache
+.turbo
+turbo.json
+
+# Testing
 coverage
-*.log
+.nyc_output
+*.lcov
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+*.iml
 .DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+.windows-build-tools
+
+# Misc
+.eslintcache
+.stylelintcache
+.vercel/
+.env.test.local
+.env.development.local
