@@ -53,3 +53,4 @@ lerna-debug.log*
 .vercel/
 .env.test.local
 .env.development.local
+*.tsbuildinfo
