@@ -38,6 +38,8 @@ export function useChat(personaId: string) {
   const sendMessage = useCallback(
     async (content: string) => {
       if (!content.trim() || isLoading) return;
+      setIsLoading(true);
+      setError(null);
 
       const userMessage: Message = {
         role: "user",
