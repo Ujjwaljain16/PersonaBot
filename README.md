@@ -4,7 +4,7 @@ A persona-based AI chatbot built for Scaler Academy's Prompt Engineering assignm
 
 ## Live Demo
 
-Live URL: replace this with your deployed Vercel/Netlify link before submission.
+Live URL: https://persona-bot-chi.vercel.app/
 
 ## What It Does
 
@@ -174,9 +174,17 @@ The app was checked with:
 - Mobile layout at narrow widths.
 - TypeScript type checking with `npm run type-check`.
 
-## Screenshots
+## Screenshots:
 
-Add your final screenshots here before submitting:
+<img width="1919" height="929" alt="image" src="https://github.com/user-attachments/assets/eba5a38a-1d28-439b-b718-35971ff6b77f" />
+<img width="1919" height="1031" alt="image" src="https://github.com/user-attachments/assets/57564578-bade-4c97-a3c3-57a4c8f6c1ea" />
+<img width="1919" height="932" alt="image" src="https://github.com/user-attachments/assets/a079affe-67ce-4aa5-9b90-087c45ebad7f" />
+<img width="1919" height="932" alt="image" src="https://github.com/user-attachments/assets/287929db-b3ff-4aeb-8805-26d5dd35c8cf" />
+<img width="1918" height="930" alt="Screenshot 2026-04-29 172409" src="https://github.com/user-attachments/assets/50c9b42f-4475-463b-9058-ba491ee978e2" />
+<img width="1918" height="928" alt="Screenshot 2026-04-29 172543" src="https://github.com/user-attachments/assets/c22ff2e2-1120-4e03-a156-aba9361b3697" />
+
+
+<img width="1919" height="106" alt="image" src="https://github.com/user-attachments/assets/af819914-144c-444f-a436-34aac9326f23" />
 
 - Desktop chat view
 - Persona switcher in action
