@@ -176,34 +176,22 @@ The app was checked with:
 
 ## Screenshots:
 
+```Anshuman Singh UI :```
 <img width="1919" height="929" alt="image" src="https://github.com/user-attachments/assets/eba5a38a-1d28-439b-b718-35971ff6b77f" />
+```Kshitij Mishra UI :```
 <img width="1919" height="1031" alt="image" src="https://github.com/user-attachments/assets/57564578-bade-4c97-a3c3-57a4c8f6c1ea" />
+```Abhimanyu Saxena UI :```
 <img width="1919" height="932" alt="image" src="https://github.com/user-attachments/assets/a079affe-67ce-4aa5-9b90-087c45ebad7f" />
+```Anshuman Singh persona response  :```
 <img width="1919" height="932" alt="image" src="https://github.com/user-attachments/assets/287929db-b3ff-4aeb-8805-26d5dd35c8cf" />
+```Abhimanyu Saxena Persona response:```
 <img width="1918" height="930" alt="Screenshot 2026-04-29 172409" src="https://github.com/user-attachments/assets/50c9b42f-4475-463b-9058-ba491ee978e2" />
+```Kshitij Mishra persona response:```
 <img width="1918" height="928" alt="Screenshot 2026-04-29 172543" src="https://github.com/user-attachments/assets/c22ff2e2-1120-4e03-a156-aba9361b3697" />
-
-
+```Error Handler```
 <img width="1919" height="106" alt="image" src="https://github.com/user-attachments/assets/af819914-144c-444f-a436-34aac9326f23" />
-
-- Desktop chat view
-- Persona switcher in action
-- Streaming response example
-- Mobile iPhone SE view
-
-## Deployment Checklist
-
-- Public repository link is shared.
-- Live app URL is added above.
-- No API keys are committed to the repo.
-- `.env.example` is present.
-- `prompts.md` contains all three prompts with annotations.
-- `reflection.md` is 300-500 words.
-- Persona switching works in production.
-- **Security**: Jailbreak defense and output sanitization are verified.
-- **Resilience**: Model fallback and error retries are operational.
-- **Performance**: Response streaming is confirmed.
-- The app handles API errors gracefully.
+```Mobile responsive ```
+<img width="618" height="918" alt="image" src="https://github.com/user-attachments/assets/528fcf79-1bc3-44b6-8433-ae272d83cf7e" />
 
 ## Notes
 
